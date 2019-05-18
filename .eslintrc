@@ -1,0 +1,42 @@
+{
+    "extends": [
+        "airbnb-base"
+    ],
+    "rules": {
+        "no-underscore-dangle": [
+            "off"
+        ],
+        "indent": [
+            "error",
+            4
+        ],
+        "import/no-unresolved": [
+            "error",
+            {
+                "ignore": ["@arangodb", "joi"]
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "only-multiline",
+                "objects": "only-multiline",
+                "imports": "only-multiline",
+                "exports": "only-multiline",
+                "functions": "never"
+            }
+        ]
+    },
+    "parser": "babel-eslint",
+    "env": {
+        "browser": false,
+        "node": true,
+        "jest": true
+    },
+    "globals": {},
+    "settings": {
+        "polyfills": [
+            "promises"
+        ]
+    }
+}

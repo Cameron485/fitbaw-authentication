@@ -1,0 +1,10 @@
+.git/
+.svn/
+.hg/
+*.swp
+*.zip
+.eslintrc
+.editorconfig
+.*log
+.DS_Store
+node_modules/
